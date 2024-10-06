@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo dos Logs</title>
+
+</head>
+<body>
+    
+   <center>
+    <div class="centered">
+        <h1>Jogo dos Logs</h1>
+        <br><br>
+        <h3>Digite seu nome:</h3>
+        <input type="text" id="nome" name="nome">
+        <br><br>
+
+      
+        <button type="button" class="btn"  onclick="startQuiz()">
+            <strong>Iniciar Quiz</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+          
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </button>
+        
+        </div>
+        
+    </center>
+    <div id="quiz-container" class="quiz-container" style="display:none;">
+        <div id="quiz"></div>
+        <div id="score" class="score"></div>
+        <div id="ranking" class="ranking"></div>
+        <br>
+       
+         <input type="button" value="Reiniciar Quiz" id="restart-btn" onclick="restartQuiz()" style="display:none;">
+         <br><br>
+         <input type="button" value="Apagar Ranking" id="reset-ranking-btn" onclick="resetRanking()">
+        </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
